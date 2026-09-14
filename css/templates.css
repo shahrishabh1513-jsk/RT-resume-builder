@@ -1,0 +1,34 @@
+/* ========================================================================
+   TEMPLATES GALLERY PAGE
+   ======================================================================== */
+.page-head{ padding:56px 0 8px; text-align:left; }
+.page-head h1{ font-size:clamp(28px,3.6vw,42px); max-width:16ch; }
+.page-head p{ font-size:16px; max-width:52ch; }
+
+.filter-bar{
+  display:flex; gap:8px; flex-wrap:wrap; padding:24px 0 40px; border-bottom:1px solid var(--line); margin-bottom:40px;
+}
+.filter-chip{
+  padding:8px 16px; border-radius:20px; border:1px solid var(--line-strong); background:transparent;
+  font-size:13.5px; font-weight:500; color:var(--ink-soft); transition:all .15s ease;
+}
+.filter-chip:hover{ border-color:var(--ink); color:var(--ink); }
+.filter-chip.active{ background:var(--ink); color:var(--paper); border-color:var(--ink); }
+
+.template-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:26px; padding-bottom:90px; }
+.template-card{
+  border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--surface);
+  display:flex; flex-direction:column; transition:box-shadow .15s ease, transform .15s ease;
+}
+.template-card:hover{ box-shadow:var(--shadow); transform:translateY(-3px); }
+.template-thumb{ aspect-ratio:210/297; background:#fff; position:relative; overflow:hidden; cursor:pointer; }
+.template-thumb .ats-tag{ position:absolute; top:10px; left:10px; }
+.template-info{ padding:16px 18px 18px; border-top:1px solid var(--line); }
+.template-info .t-top{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px; }
+.template-info h3{ font-size:16px; margin:0; }
+.template-info .t-cat{ font-size:12px; color:var(--muted); text-transform:capitalize; }
+.template-actions{ display:flex; gap:8px; margin-top:14px; }
+.template-actions .btn{ flex:1; }
+
+/* thumb mini render (scaled resume) */
+.thumb-render{ transform:scale(.42); transform-origin:top left; width:238%; }

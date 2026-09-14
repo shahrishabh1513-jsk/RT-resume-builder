@@ -1,0 +1,6 @@
+[
+  { "id": "classic", "name": "RT Classic", "category": "professional", "ats": true, "description": "A traditional, centered layout with a clean rule under every heading." },
+  { "id": "modern", "name": "RT Modern", "category": "modern", "ats": true, "description": "An accent-color sidebar keeps contact info, skills and languages visible at a glance." },
+  { "id": "minimal", "name": "RT Minimal", "category": "minimal", "ats": true, "description": "Quiet typography and generous whitespace." },
+  { "id": "executive", "name": "RT Executive", "category": "executive", "ats": true, "description": "A bold ink header signals seniority; built for leadership roles." }
+]

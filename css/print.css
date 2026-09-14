@@ -1,0 +1,18 @@
+/* ========================================================================
+   PRINT — only the resume paper should ever reach the printer
+   ======================================================================== */
+@media print{
+  @page{ size:A4; margin:0; }
+  html,body{ background:#fff !important; height:auto !important; overflow:visible !important; }
+  .site-header,.site-footer,.builder-header,.builder-sidebar,.builder-form-panel,
+  .preview-toolbar,#toast-stack,.modal-overlay,.mobile-nav,.hamburger,
+  .no-print, .mobile-tabs{ display:none !important; }
+  .builder-body{ display:block !important; height:auto !important; }
+  .builder-preview-panel{ background:#fff !important; overflow:visible !important; display:block !important; }
+  .preview-scroll{ padding:0 !important; display:block !important; overflow:visible !important; }
+  .preview-scale-wrap{ transform:none !important; }
+  .resume-page{
+    box-shadow:none !important; margin:0 !important; width:210mm !important; min-height:297mm !important;
+    page-break-after:always;
+  }
+}
