@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RT Resume Builder — Build a Professional Resume</title>
+<meta name="description" content="Create professional ATS-friendly resumes with modern templates, live preview, smart guidance and easy PDF export.">
+<meta property="og:title" content="RT Resume Builder — Build a Resume. Build Your Future.">
+<meta property="og:description" content="Create professional, ATS-friendly resumes in minutes with modern templates and a live preview.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%2317233B%22/><text x=%2250%22 y=%2266%22 font-size=%2244%22 fill=%22%23FBF9F4%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22>RT</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand-mark">RT</span><span class="brand-name">RT Resume Builder</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="templates.html">Templates</a>
+      <a href="builder.html">Resume Builder</a>
+      <a href="ats-checker.html">ATS Checker</a>
+      <a href="cover-letter.html">Cover Letter</a>
+      <a href="dashboard.html">My Resumes</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="icon-moon" data-icon="moon"></span><span class="icon-sun" data-icon="sun"></span>
+      </button>
+      <a href="dashboard.html" class="btn btn-ghost">Dashboard</a>
+      <button class="btn btn-primary" data-create-resume>Create Resume</button>
+    </div>
+    <button class="hamburger" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="templates.html">Templates</a>
+  <a href="builder.html">Resume Builder</a>
+  <a href="ats-checker.html">ATS Checker</a>
+  <a href="cover-letter.html">Cover Letter</a>
+  <a href="dashboard.html">My Resumes</a>
+  <div class="mobile-actions">
+    <button class="btn btn-primary" data-create-resume>Create Resume</button>
+    <a href="dashboard.html" class="btn btn-outline">Dashboard</a>
+  </div>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="hero-rule" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-copy">
+        <div class="hero-eyebrow"><span class="dot"></span><span>No sign-up required — start building free</span></div>
+        <h1>Build a resume that gets <em>noticed.</em></h1>
+        <p class="lede">Create a professional, ATS-friendly resume in minutes with modern templates, smart guidance and a live preview that updates as you type.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-accent" data-create-resume>Create My Resume</button>
+          <a href="templates.html" class="btn btn-outline">Explore Templates</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>4</strong><span>Original templates</span></div>
+          <div><strong>13</strong><span>Content sections</span></div>
+          <div><strong>0&nbsp;$</strong><span>To build &amp; export</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="mini-app">
+          <div class="mini-app-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <div class="completion">Completion <div class="mini-progress"><i></i></div></div>
+          </div>
+          <div class="mini-resume">
+            <div class="m-name" id="hero-type-name"></div>
+            <div class="m-title">Full Stack Developer<span class="type-cursor"></span></div>
+            <div class="m-line"></div>
+            <div class="m-line short"></div>
+            <div class="m-heading">Experience</div>
+            <div class="m-line"></div>
+            <div class="m-line"></div>
+            <div class="m-line short"></div>
+            <div class="m-heading">Skills</div>
+            <div class="m-line short"></div>
+          </div>
+        </div>
+        <div class="hero-badge-float">Resume Score <strong>87/100</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>How it works</h2>
+        <p>From a blank page to a downloadable resume in four steps.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step-num">01</span><h3>Choose a template</h3><p>Pick from four original, ATS-friendly layouts.</p></div>
+        <div class="step"><span class="step-num">02</span><h3>Add your information</h3><p>Fill in guided sections for experience, education and more.</p></div>
+        <div class="step"><span class="step-num">03</span><h3>Customize your design</h3><p>Adjust color, font, spacing and section order live.</p></div>
+        <div class="step"><span class="step-num">04</span><h3>Download &amp; apply</h3><p>Export a polished PDF, TXT, or JSON backup instantly.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Everything a resume needs</h2>
+        <p>Built for speed and clarity — nothing you don't need, nothing missing that you do.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card"><div class="f-icon"><span data-icon="file-text"></span></div><h3>Professional Templates</h3><p>Four distinct, genuinely different layouts — not one template in four colors.</p></div>
+        <div class="feature-card"><div class="f-icon"><span data-icon="eye"></span></div><h3>Live Preview</h3><p>Every keystroke updates your resume instantly. No refresh, no guessing.</p></div>
+        <div class="feature-card"><div class="f-icon"><span data-icon="check-circle"></span></div><h3>ATS-Friendly Formatting</h3><p>Clean structure that parses well in applicant tracking systems.</p></div>
+        <div class="feature-card"><div class="f-icon"><span data-icon="sparkle"></span></div><h3>Smart Suggestions</h3><p>Local, role-based writing suggestions for summaries and bullet points.</p></div>
+        <div class="feature-card"><div class="f-icon"><span data-icon="award"></span></div><h3>Resume Score</h3><p>A local ATS-style analyzer flags gaps before a recruiter ever sees them.</p></div>
+        <div class="feature-card"><div class="f-icon"><span data-icon="download"></span></div><h3>PDF, TXT &amp; JSON Export</h3><p>Download a polished PDF, plain text, or a full JSON backup any time.</p></div>
+        <div class="feature-card"><div class="f-icon"><span data-icon="folder"></span></div><h3>Multiple Resumes</h3><p>Keep separate resumes for different roles, all saved on your device.</p></div>
+        <div class="feature-card"><div class="f-icon"><span data-icon="edit"></span></div><h3>Cover Letter Builder</h3><p>Draft a matching cover letter with the same design system.</p></div>
+        <div class="feature-card"><div class="f-icon"><span data-icon="grip"></span></div><h3>Drag-and-Drop Sections</h3><p>Reorder, hide, or add custom sections exactly how you want them.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Four templates, genuinely different</h2>
+        <p>Not one layout recolored four times — each has its own structure.</p>
+      </div>
+      <div class="showcase-grid" id="showcase-grid"></div>
+      <div class="showcase-more"><a href="templates.html" class="btn btn-outline">View All Templates</a></div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container ats-section">
+      <div>
+        <h2>Built to pass the first filter</h2>
+        <p>Most large employers scan resumes with an applicant tracking system before a person ever reads them. RT Resume Builder's templates use clean structure and standard section names so your resume parses correctly — and the built-in checker flags anything that might trip one up.</p>
+        <ul class="ats-check-list">
+          <li><span data-icon="check-circle"></span> Standard section headings, no tables or text boxes</li>
+          <li><span data-icon="check-circle"></span> Selectable text in every exported PDF</li>
+          <li><span data-icon="check-circle"></span> Keyword matching against a target job description</li>
+          <li><span data-icon="check-circle"></span> Flags for missing contact info, weak bullets or empty sections</li>
+        </ul>
+        <a href="ats-checker.html" class="btn btn-primary" style="margin-top:10px;">Check My Resume Score</a>
+      </div>
+      <div class="ats-score-card">
+        <div class="score-ring" id="ats-demo-ring">
+          <svg viewBox="0 0 140 140"><circle class="track" cx="70" cy="70" r="62"/><circle class="fill" cx="70" cy="70" r="62" style="stroke-dasharray:389;stroke-dashoffset:50"/></svg>
+          <div class="score-num"><strong>87</strong><span>OUT OF 100</span></div>
+        </div>
+        <p style="margin:0;color:var(--muted);font-size:13.5px;">A local, simulated score — not a real employer ATS.</p>
+        <ul class="ats-cat-list">
+          <li><span>Contact Information</span><strong style="color:var(--success)">100</strong></li>
+          <li><span>Experience</span><strong style="color:var(--success)">92</strong></li>
+          <li><span>Skills</span><strong style="color:var(--warning)">74</strong></li>
+          <li><span>Formatting</span><strong style="color:var(--success)">95</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="final-cta">
+        <h2>Create your professional resume today</h2>
+        <p>Free to build, free to export. No account required.</p>
+        <button class="btn btn-accent" data-create-resume>Start Building</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand" style="margin-bottom:10px;"><span class="brand-mark">RT</span><span class="brand-name">RT Resume Builder</span></a>
+        <p style="max-width:32ch;">Build a Resume. Build Your Future.</p>
+      </div>
+      <div class="footer-col"><h4>Product</h4>
+        <a href="templates.html">Templates</a><a href="builder.html">Resume Builder</a><a href="ats-checker.html">ATS Checker</a><a href="cover-letter.html">Cover Letter</a>
+      </div>
+      <div class="footer-col"><h4>Account</h4>
+        <a href="dashboard.html">Dashboard</a><a href="dashboard.html">My Resumes</a>
+      </div>
+      <div class="footer-col"><h4>Company</h4>
+        <a href="index.html">About</a><a href="index.html">Help</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 RT Resume Builder. A frontend demo product — all data stays on your device.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/ui.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/resume-data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/templates.js"></script>
+<script src="js/resume-preview.js"></script>
+<script src="js/suggestions-data.js"></script>
+<script src="js/sample-data.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('[data-icon]').forEach(el => { el.innerHTML = RTIcons[el.dataset.icon] || ''; });
+  });
+</script>
+<script>
+  // render template showcase using the shared preview engine (kept inline: purely presentational, page-specific)
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.getElementById('showcase-grid');
+    const sample = RTSampleData.getSampleResume();
+    grid.innerHTML = RT_TEMPLATES.map(t => `
+      <a class="showcase-card" href="templates.html">
+        <div class="showcase-thumb"><div class="thumb-render" style="transform:scale(.42);transform-origin:top left;width:238%;" id="show-${t.id}"></div></div>
+        <div class="showcase-meta"><span>${t.name}</span><span class="badge badge-brass">${t.category}</span></div>
+      </a>`).join('');
+    RT_TEMPLATES.forEach(t => {
+      const holder = document.getElementById(`show-${t.id}`);
+      RTPreview.renderInto(holder, Object.assign({}, sample, { template: t.id }));
+    });
+  });
+</script>
+</body>
+</html>

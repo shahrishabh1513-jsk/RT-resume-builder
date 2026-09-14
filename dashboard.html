@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — RT Resume Builder</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%2317233B%22/><text x=%2250%22 y=%2266%22 font-size=%2244%22 fill=%22%23FBF9F4%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22>RT</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand-mark">RT</span><span class="brand-name">RT Resume Builder</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="templates.html">Templates</a>
+      <a href="builder.html">Resume Builder</a>
+      <a href="ats-checker.html">ATS Checker</a>
+      <a href="cover-letter.html">Cover Letter</a>
+      <a href="dashboard.html">My Resumes</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" aria-label="Toggle dark mode"><span data-icon="moon" class="icon-moon"></span><span data-icon="sun" class="icon-sun"></span></button>
+      <button class="btn btn-primary" data-create-resume>Create Resume</button>
+    </div>
+    <button class="hamburger" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav">
+  <a href="index.html">Home</a><a href="templates.html">Templates</a><a href="builder.html">Resume Builder</a>
+  <a href="ats-checker.html">ATS Checker</a><a href="cover-letter.html">Cover Letter</a><a href="dashboard.html">My Resumes</a>
+  <div class="mobile-actions"><button class="btn btn-primary" data-create-resume>Create Resume</button></div>
+</nav>
+
+<main class="container">
+  <div class="dash-head">
+    <div><h1>Welcome back!</h1><p>Here's what's happening with your resumes.</p></div>
+    <div class="flex gap-12">
+      <label class="btn btn-outline btn-sm" style="cursor:pointer;">Import Resume<input type="file" id="import-resume-input" accept="application/json" class="visually-hidden"></label>
+      <button class="btn btn-accent" data-create-resume>Create New Resume</button>
+    </div>
+  </div>
+
+  <div class="stat-grid" id="stat-grid"></div>
+
+  <div class="dash-toolbar">
+    <div class="search-box"><span data-icon="search"></span><input type="text" id="search-input" placeholder="Search resumes…"></div>
+    <div class="dash-filters">
+      <button class="filter-chip active" data-filter="all">All</button>
+      <button class="filter-chip" data-filter="draft">Draft</button>
+      <button class="filter-chip" data-filter="completed">Completed</button>
+      <button class="filter-chip" data-filter="recent">Recent</button>
+    </div>
+    <select id="sort-select" class="field" style="width:auto;padding:9px 12px;border:1px solid var(--line-strong);border-radius:20px;background:var(--surface);color:var(--ink);">
+      <option value="recent">Recently Edited</option>
+      <option value="oldest">Oldest</option>
+      <option value="name-asc">Name A–Z</option>
+      <option value="name-desc">Name Z–A</option>
+      <option value="score-high">Highest Score</option>
+      <option value="score-low">Lowest Score</option>
+    </select>
+    <div class="view-toggle">
+      <button data-view="grid" class="active"><span data-icon="grid"></span></button>
+      <button data-view="list"><span data-icon="list"></span></button>
+    </div>
+  </div>
+
+  <div class="resume-grid" id="resume-grid"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><div class="footer-bottom"><span>© 2026 RT Resume Builder. A frontend demo product — all data stays on your device.</span></div></div>
+</footer>
+
+<script src="js/ui.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/resume-data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/templates.js"></script>
+<script src="js/resume-preview.js"></script>
+<script src="js/suggestions-data.js"></script>
+<script src="js/sample-data.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/pdf-export.js"></script>
+<script src="js/app.js"></script>
+<script src="js/dashboard.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-icon]').forEach(el => { el.innerHTML = RTIcons[el.dataset.icon] || ''; });
+});
+</script>
+</body>
+</html>

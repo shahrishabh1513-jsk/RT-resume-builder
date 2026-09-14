@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cover Letter Builder — RT Resume Builder</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%2317233B%22/><text x=%2250%22 y=%2266%22 font-size=%2244%22 fill=%22%23FBF9F4%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22>RT</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/builder.css">
+<link rel="stylesheet" href="css/resume.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/print.css" media="print">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<style>
+  .cl-body{ display:grid; grid-template-columns:1fr 1fr; height:calc(100vh - var(--header-h)); }
+  .cl-form-panel{ overflow-y:auto; border-right:1px solid var(--line); background:var(--paper); padding:30px 34px 100px; }
+  .cl-form-panel h2{ font-size:22px; margin-bottom:20px; }
+  .cl-page{ width:210mm; min-height:297mm; background:#fff; box-shadow:0 10px 40px rgba(23,35,59,.18); padding:22mm 20mm; color:#20242c; font-family:var(--r-font,'Fraunces',serif); font-size:11pt; line-height:1.65; }
+  @media (max-width:1024px){ .cl-body{ grid-template-columns:1fr; height:auto; } }
+</style>
+</head>
+<body class="builder-page">
+
+<header class="builder-header no-print">
+  <a href="dashboard.html" class="brand"><span class="brand-mark">RT</span></a>
+  <div class="resume-name-wrap"><span style="font-family:var(--font-display);font-weight:600;">Cover Letter Builder</span></div>
+  <div class="builder-header-actions">
+    <button class="btn btn-outline btn-sm" id="cl-print"><span data-icon="print"></span> Print</button>
+    <button class="btn btn-primary btn-sm" id="cl-download-pdf"><span data-icon="download"></span> Download PDF</button>
+  </div>
+</header>
+
+<div class="cl-body">
+  <section class="cl-form-panel no-print">
+    <h2>Write Your Cover Letter</h2>
+    <div id="cl-form"></div>
+  </section>
+  <section class="builder-preview-panel" id="builder-preview-panel">
+    <div class="preview-toolbar no-print">
+      <button class="btn-icon" id="zoom-out">–</button>
+      <span class="zoom-label" id="zoom-label">68%</span>
+      <button class="btn-icon" id="zoom-in">+</button>
+    </div>
+    <div class="preview-scroll">
+      <div class="preview-scale-wrap">
+        <div class="cl-page" id="cl-page"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="js/ui.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/resume-data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/templates.js"></script>
+<script src="js/resume-preview.js"></script>
+<script src="js/suggestions-data.js"></script>
+<script src="js/sample-data.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/pdf-export.js"></script>
+<script src="js/cover-letter.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-icon]').forEach(el => { el.innerHTML = RTIcons[el.dataset.icon] || ''; });
+});
+</script>
+</body>
+</html>
