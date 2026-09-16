@@ -1,5 +1,6 @@
+<img align="right" src="https://github.com/user-attachments/assets/41de0edc-f0a3-474a-9156-d8b3d10d41ba" width="140" alt="Shah Rishabh badge logo"/>
 # RT Resume Builder
-
+<img align="left" src="https://github.com/user-attachments/assets/90c19f97-8b0b-4df1-96c4-a288d337503c" width="140" alt="Shah Rishabh badge logo"/>
 **Build a Resume. Build Your Future.**
 
 A complete, frontend-only resume builder — HTML5, vanilla JavaScript (ES6+), CSS3 and LocalStorage. No backend, no build step, no account required.
