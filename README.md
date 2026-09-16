@@ -1,98 +1,332 @@
-<img align="right" src="https://github.com/user-attachments/assets/41de0edc-f0a3-474a-9156-d8b3d10d41ba" width="140" alt="Shah Rishabh badge logo"/>
-# RT Resume Builder
-<img align="left" src="https://github.com/user-attachments/assets/90c19f97-8b0b-4df1-96c4-a288d337503c" width="140" alt="Shah Rishabh badge logo"/>
-**Build a Resume. Build Your Future.**
+<table width="100%">
+<tr>
+<td width="15%" align="center">
+<img src="https://github.com/user-attachments/assets/90c19f97-8b0b-4df1-96c4-a288d337503c" width="110" alt="Shah Rishabh badge logo"/>
+</td>
+<td width="70%" align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E3A8A,100:06B6D4&height=200&section=header&text=RT%20Resume%20Builder&fontSize=40&fontColor=ffffff&fontAlignY=45" width="100%"/>
+</td>
+<td width="15%" align="center">
+<img src="https://github.com/user-attachments/assets/41de0edc-f0a3-474a-9156-d8b3d10d41ba" width="110" alt="Shah Rishabh badge logo"/>
+</td>
+</tr>
+</table>
 
-A complete, frontend-only resume builder — HTML5, vanilla JavaScript (ES6+), CSS3 and LocalStorage. No backend, no build step, no account required.
+<div align="center">
 
-## Features
+<h3>Build a Resume. Build Your Future.</h3>
 
-- **Resume Builder** — 13 content sections (personal info, summary, experience, education, skills, projects, certifications, languages, achievements, volunteer, interests, references, custom sections), each with add / duplicate / remove / reorder (drag-and-drop).
-- **Live Preview** — the resume paper on the right updates on every keystroke, no reload.
-- **4 original templates** — Classic, Modern, Minimal, Executive — genuinely different layouts, not one template recolored.
-- **Design customization** — accent color, font, font size, spacing, heading style, margins, and drag-to-reorder / show-hide section order.
-- **Multiple resumes** — unlimited resumes stored independently in LocalStorage.
-- **Dashboard** — stats, search, filter, sort, grid/list view, duplicate/rename/delete.
-- **ATS Checker** — a local, simulated resume score (0–100) across 7 categories, a plain-language issue list, and keyword matching against a target job title.
-- **Cover Letter Builder** — matching A4 preview, local draft generation, import from your active resume.
-- **Export** — real PDF (via html2pdf.js), plain TXT, and full JSON backup/restore.
-- **Autosave** with a visible Saving… / Saved indicator (debounced).
-- **Undo / Redo** for structural changes (add/remove/reorder/design/template), with Ctrl+Z / Ctrl+Y.
-- **Dark mode**, fully responsive (desktop / tablet / mobile with bottom tab navigation), print stylesheet.
-- **Local, rule-based writing suggestions** for summaries and experience bullets, keyed by job title — clearly labeled as not a live AI model, and structured so a real AI API could be dropped in later.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1200&color=06B6D4&center=true&vCenter=true&width=760&lines=ATS-Friendly+Resumes+in+Minutes;Live+Preview+That+Updates+As+You+Type;Resume+Score+%2B+ATS+Checker+Built+In;PDF%2C+TXT+and+JSON+Export" alt="Typing SVG" />
 
-## Technology
+<br/>
 
-HTML5, CSS3 (Grid, Flexbox, custom properties, native drag-and-drop), vanilla JavaScript ES6+, LocalStorage, JSON. One external library: **html2pdf.js** (loaded from a CDN) for real PDF export — everything else is dependency-free.
+<a href="https://shahrishabh1513-jsk.github.io/RT-resume-builder/"><img src="https://img.shields.io/badge/LIVE_DEMO-Build_Your_Resume-1E3A8A?style=for-the-badge&logo=googlechrome&logoColor=white"/></a>
+<a href="https://github.com/shahrishabh1513-jsk/RT-resume-builder"><img src="https://img.shields.io/badge/REPOSITORY-View_Code-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://github.com/shahrishabh1513-jsk/RT-resume-builder/stargazers"><img src="https://img.shields.io/badge/STAR-Support_This_Repo-06B6D4?style=for-the-badge&logo=github&logoColor=white"/></a>
 
-## Folder structure
+<br/><br/>
 
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/GitHub_Pages-222?style=for-the-badge&logo=github&logoColor=white"/>
+
+<br/>
+
+<img src="https://img.shields.io/github/last-commit/shahrishabh1513-jsk/RT-resume-builder?style=flat-square&color=06B6D4&label=Last%20Updated"/>
+<img src="https://img.shields.io/badge/Status-Live%20✅-brightgreen?style=flat-square"/>
+<img src="https://img.shields.io/badge/Responsive-100%25-success?style=flat-square"/>
+<img src="https://img.shields.io/badge/No_Sign--Up-Required-1E3A8A?style=flat-square"/>
+<img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square"/>
+
+</div>
+
+<br/>
+
+<table align="center">
+<tr>
+<td align="center" width="20%"><sub>TEMPLATES</sub><br><b>4 Original</b></td>
+<td align="center" width="20%"><sub>CONTENT SECTIONS</sub><br><b>13</b></td>
+<td align="center" width="20%"><sub>COST</sub><br><b>$0 Free</b></td>
+<td align="center" width="20%"><sub>EXPORT</sub><br><b>PDF · TXT · JSON</b></td>
+<td align="center" width="20%"><sub>DATA</sub><br><b>Stays On Device</b></td>
+</tr>
+</table>
+
+<div align="center">
+
+[![Preview](https://img.shields.io/badge/🔍_Preview-1E3A8A?style=for-the-badge)](#-live-preview)
+[![About](https://img.shields.io/badge/📖_About-24499B?style=for-the-badge)](#-about-the-project)
+[![Features](https://img.shields.io/badge/✨_Features-2A58AD?style=for-the-badge)](#-key-features)
+[![Site Map](https://img.shields.io/badge/🗺️_Site_Map-3067BF?style=for-the-badge)](#-site-map)
+[![Workflow](https://img.shields.io/badge/🧭_Workflow-3676D1?style=for-the-badge)](#-how-it-works)
+[![Tech Stack](https://img.shields.io/badge/🛠️_Tech_Stack-3C85E3?style=for-the-badge)](#️-tech-stack)
+[![Structure](https://img.shields.io/badge/📂_Structure-4294F5?style=for-the-badge)](#-folder-structure)
+[![Setup](https://img.shields.io/badge/🚀_Setup-06B6D4?style=for-the-badge)](#-getting-started)
+[![Connect](https://img.shields.io/badge/🤝_Connect-06B6D4?style=for-the-badge)](#-connect)
+
+</div>
+
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1E3A8A,100:06B6D4&height=3&section=header"/></div>
+
+## 🔍 Live Preview
+
+<div align="center">
+
+<a href="https://shahrishabh1513-jsk.github.io/RT-resume-builder/" target="_blank">
+<img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fshahrishabh1513-jsk.github.io%2FRT-resume-builder%2F?w=1200" width="85%" style="border-radius:10px; box-shadow: 0 6px 18px rgba(0,0,0,0.2);"/>
+</a>
+
+<sub>👆 Click to explore the live app</sub>
+
+<br/><br/>
+
+<a href="https://shahrishabh1513-jsk.github.io/RT-resume-builder/" target="_blank">
+  <img src="https://img.shields.io/badge/START_BUILDING-No_Sign--Up_Required-1E3A8A?style=for-the-badge&logoColor=white"/>
+</a>
+
+</div>
+
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:06B6D4,100:1E3A8A&height=3&section=header"/></div>
+
+## 📖 About The Project
+
+**RT Resume Builder** is a fully client-side **resume building web app** that helps job seekers create professional, ATS-friendly resumes in minutes — with modern templates, smart writing guidance, and a live preview that updates as you type.
+
+Everything runs entirely in the browser. There's no sign-up, no backend, and no data leaving your device — resumes are saved locally and exported as PDF, plain text, or a JSON backup whenever you want.
+
+> 💬 *"Build a resume that gets noticed."*
+
+<div align="center">
+
+| | |
+|---|---|
+| 📄 **Type** | Client-side Resume Builder Web App |
+| 🎯 **Built For** | Job seekers who need a fast, clean, ATS-ready resume |
+| 🔒 **Privacy** | No account required — all data stays on your device |
+| 🧠 **Standout Feature** | Built-in ATS Checker with a live Resume Score |
+| 📤 **Export** | PDF · TXT · JSON backup |
+
+</div>
+
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1E3A8A,100:06B6D4&height=3&section=header"/></div>
+
+## ✨ Key Features
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 📄 Resume Building
+- 🎨 **4 original templates** — genuinely different layouts, not one recolored
+- ⚡ **Live preview** updates on every keystroke
+- 🗂️ **13 content sections** for full coverage
+- 🖱️ **Drag-and-drop** section reordering, hiding & custom sections
+
+</td>
+<td width="50%" valign="top">
+
+### 🎯 ATS Optimization
+- ✅ **ATS-friendly formatting** — clean structure, standard headings
+- 📊 **Resume Score** analyzer with category breakdowns
+- 🔑 **Keyword matching** against a target job description
+- ⚠️ Flags missing contact info, weak bullets & empty sections
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🧠 Smart Guidance
+- 💡 **Role-based writing suggestions** for summaries & bullets
+- 📝 **Cover Letter Builder** with a matching design system
+- 🎛️ Live customization — color, font, spacing & section order
+- 📑 **Multiple resumes** for different roles, saved separately
+
+</td>
+<td width="50%" valign="top">
+
+### 📤 Export & Privacy
+- 🖨️ **PDF export** with selectable text (ATS-parsable)
+- 📃 **TXT export** for plain-text applications
+- 💾 **JSON backup** for full portability
+- 🔒 **100% local** — no server, no account, no tracking
+
+</td>
+</tr>
+</table>
+
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:06B6D4,100:1E3A8A&height=3&section=header"/></div>
+
+## 🗺️ Site Map
+
+<div align="center">
+
+| Page | Description |
+|:---:|---|
+| 🏠 **Home** (`index.html`) | Landing page, feature highlights & how-it-works |
+| 🎨 **Templates** (`templates.html`) | Browse all four resume templates |
+| 🛠️ **Resume Builder** (`builder.html`) | Main editor with live preview |
+| 🎯 **ATS Checker** (`ats-checker.html`) | Resume Score & keyword analysis |
+| ✉️ **Cover Letter** (`cover-letter.html`) | Matching cover letter builder |
+| 📁 **My Resumes** (`dashboard.html`) | Saved resumes dashboard |
+
+</div>
+
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1E3A8A,100:06B6D4&height=3&section=header"/></div>
+
+## 🧭 How It Works
+
+```mermaid
+flowchart LR
+    A[🎨 Choose a Template] --> B[✍️ Add Your Information]
+    B --> C[🎛️ Customize Design]
+    C --> D[🎯 Check ATS Score]
+    D --> E[📤 Download & Apply]
+    D -.->|Score too low?| B
+    C -.->|Need a cover letter?| F[✉️ Cover Letter Builder]
+    F -.-> E
 ```
-RT-Resume-Builder/
-├── index.html            Landing page
-├── templates.html        Template gallery
-├── builder.html           Resume builder (core app)
-├── dashboard.html         Multiple resumes, stats, search/filter/sort
-├── ats-checker.html       ATS score + keyword matcher
-├── cover-letter.html      Cover letter builder
-├── css/                   style, responsive, landing, templates, builder, resume, dashboard, print
-├── js/                    storage, resume-data, resume-preview, resume-builder, templates,
-│                          ats-checker, cover-letter, pdf-export, ui, icons, navigation,
-│                          suggestions-data, sample-data, dashboard, templates-page, app
-├── data/                  templates.json / skills.json (reference copies — see data/README.txt)
-└── assets/                logo / icons / template thumbnails / images
+
+<div align="center">
+
+**01** Choose a template &nbsp;→&nbsp; **02** Add your information &nbsp;→&nbsp; **03** Customize your design &nbsp;→&nbsp; **04** Download & apply
+
+</div>
+
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:06B6D4,100:1E3A8A&height=3&section=header"/></div>
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+| Category | Technology | Purpose |
+|:---:|:---:|:---|
+| **Markup** | ![HTML5](https://img.shields.io/badge/-E34F26?style=flat-square&logo=html5&logoColor=white) | Semantic page structure |
+| **Styling** | ![CSS3](https://img.shields.io/badge/-1572B6?style=flat-square&logo=css3&logoColor=white) | Templates, theming & responsive layouts |
+| **Interactivity** | ![JavaScript](https://img.shields.io/badge/-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Live preview, ATS scoring, drag-and-drop |
+| **Storage** | ![Browser](https://img.shields.io/badge/-localStorage-06B6D4?style=flat-square&logo=googlechrome&logoColor=white) | Local resume persistence, no backend |
+| **Version Control** | ![Git](https://img.shields.io/badge/-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/-181717?style=flat-square&logo=github&logoColor=white) | Source control |
+| **Deployment** | ![GitHub Pages](https://img.shields.io/badge/-222?style=flat-square&logo=github&logoColor=white) | Live hosting |
+
+</div>
+
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1E3A8A,100:06B6D4&height=3&section=header"/></div>
+
+## 📂 Folder Structure
+
+<details>
+<summary><b>Click to expand the folder structure 📁</b></summary>
+
+```bash
+RT-resume-builder/
+│
+├── assets/
+│   ├── logo.svg                      # RT Resume Builder logo
+│   └── icons/                          # UI icons
+│
+├── index.html                            # Home / landing page
+├── templates.html                          # Template gallery
+├── builder.html                              # Resume builder & live preview
+├── ats-checker.html                            # ATS score & keyword checker
+├── cover-letter.html                             # Cover letter builder
+├── dashboard.html                                  # Saved resumes dashboard
+│
+├── css/
+│   ├── style.css                                      # Global styles
+│   └── templates.css                                    # Resume template styles
+│
+├── js/
+│   ├── builder.js                                          # Editor & live preview logic
+│   ├── templates.js                                          # Template rendering
+│   ├── ats-checker.js                                          # Resume scoring logic
+│   ├── storage.js                                                # localStorage persistence
+│   └── export.js                                                   # PDF / TXT / JSON export
+│
+└── README.md                                                           # Project documentation
 ```
 
-## How to run
+</details>
 
-Open `index.html` directly in a browser, or serve the folder with any static server, e.g.:
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:06B6D4,100:1E3A8A&height=3&section=header"/></div>
 
+## 🚀 Getting Started
+
+### Option 1 — Use the live version
+
+No setup needed 👉 **[Open RT Resume Builder](https://shahrishabh1513-jsk.github.io/RT-resume-builder/)**
+
+### Option 2 — Run it locally
+
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/shahrishabh1513-jsk/RT-resume-builder.git
+
+# 2️⃣ Navigate into the project directory
+cd RT-resume-builder
+
+# 3️⃣ Serve it locally (recommended, so localStorage behaves consistently)
+python -m http.server 8000
 ```
-python3 -m http.server 8000
-```
 
-then visit `http://localhost:8000`. No build step, no install.
+Then open `http://localhost:8000` in your browser.
 
-## How to use
+✅ No build tools, dependencies, or installations required — it's a pure **HTML/CSS/JS** project.
 
-1. From the homepage or dashboard, click **Create Resume**, pick a resume type, then a template.
-2. Fill in sections from the left-hand sidebar in the builder — the preview on the right updates live.
-3. Use the **Design** tab to change color, font, spacing and section order.
-4. Check your **ATS Score** any time from the builder header or the ATS Checker page.
-5. Download a **PDF**, **TXT**, or a full **JSON backup** from the Download menu.
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1E3A8A,100:06B6D4&height=3&section=header"/></div>
 
-## LocalStorage architecture
+## 🔒 Data & Privacy
 
-Everything lives under a handful of keys (see `js/storage.js`), all namespaced `rt_*`:
-- `rt_resumes` — a map of `{ id: resumeObject }`, one shared schema for every template (see `js/resume-data.js`).
-- `rt_active_resume_id`, `rt_cover_letters`, `rt_active_cover_id`, `rt_theme`, `rt_settings`.
+All resume data is stored **locally in your browser** — there is no backend server and no account system.
 
-`storage.js` is the only module that touches `localStorage` directly, so the persistence layer can be swapped for a real backend later without touching the UI code.
+- ✅ No sign-up required, works offline once loaded
+- ✅ Nothing is ever sent to any server
+- ⚠️ Clearing browser data will erase saved resumes — export a JSON backup regularly
+- ⚠️ Resumes don't sync across devices or browsers (by design)
 
-## PDF export
+> ℹ️ The Resume Score is a **local, simulated ATS analysis** — a helpful guide, not a real employer's applicant tracking system.
 
-`js/pdf-export.js` clones the live-rendered resume into an off-screen A4 element and hands it to `html2pdf.js`, producing a real, selectable-text, multi-page-capable PDF — not a screenshot of the app UI.
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:06B6D4,100:1E3A8A&height=3&section=header"/></div>
 
-## ATS checker
+## 🧭 Roadmap
 
-`js/ats-checker.js` is a local, rule-based analyzer (missing fields, weak bullets, missing measurable achievements, thin sections, keyword coverage against a target job title). It is explicitly labeled in the UI as a simulated, local check — not a real employer ATS.
+- [x] Four original ATS-friendly templates
+- [x] Live preview with drag-and-drop sections
+- [x] ATS Checker with Resume Score
+- [x] PDF, TXT & JSON export
+- [x] Cover letter builder
+- [ ] ☁️ Optional cloud sync across devices
+- [ ] 🌐 More template designs
+- [ ] 🌙 Dark mode
+- [ ] 🗣️ Multi-language resume support
 
-## Known limitations / scope notes
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:1E3A8A,100:06B6D4&height=3&section=header"/></div>
 
-This build focuses on the features an actual user would touch every day, and intentionally leaves out a few things from a full 90-section spec:
-- **4 templates instead of 8** (Classic, Modern, Minimal, Executive) — each is a genuinely distinct layout; adding more is mostly a CSS exercise using the existing `resume.css` pattern.
-- **No login/signup, pricing, or payments** — these would only be believable with a real backend, so rather than fake authentication or payment processing (which the product should never do), those pages were left out. They're easy to add as demo-only UI later if wanted.
-- **Resume import from PDF/DOCX** isn't implemented — real parsing needs a backend or a heavy client-side library. `dashboard.html`'s **Import Resume** button supports the fully-functional path: importing a previously exported **JSON** backup.
-- **Text-field edits autosave continuously** (like a document editor) rather than being individually undoable keystroke-by-keystroke; **structural changes** (add/remove/reorder entries, template/design changes) are fully undo/redo-able via Ctrl+Z / Ctrl+Y.
-- `data/suggestions.json` and `data/sample-resume.json` are kept as plain-text notes rather than fetched JSON files, because opening `index.html` via `file://` blocks `fetch()` of local JSON in most browsers. The same data is embedded directly as JS in `js/suggestions-data.js` and `js/sample-data.js` so the app works with zero setup.
+## 🤝 Connect
 
-## Deployment
+<div align="center">
 
-Static files only — deploys as-is to Netlify, Vercel, or GitHub Pages. No environment variables, no server.
+**Rishabh Alpeshabhai Shah**
 
-## Future improvements
+<a href="https://rishabh-shah-portfolio.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-1E3A8A?style=for-the-badge&logo=netlify&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/rishabh-alpeshabhai-shah-91b9072a6/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:shahrishu1515@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://github.com/shahrishabh1513-jsk"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 
-- Real AI API integration behind the existing `RTSuggest` / suggestion functions.
-- Backend sync (accounts, cloud storage) behind the existing `storage.js` interface.
-- PDF/DOCX resume import via a parsing service.
-- Additional templates and section-level custom color per template.
+</div>
+
+---
+
+<div align="center">
+
+### ⭐ If this helped you land an interview, give it a star!
+
+<img src="https://komarev.com/ghpvc/?username=rt-resume-builder&label=Repo%20Views&color=06B6D4&style=for-the-badge" alt="Repo Views" />
+
+<br/>
+
+**Made with 📄 & 💙 by Rishabh Shah**
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,100:1E3A8A&height=100&section=footer"/>
+
+</div>
