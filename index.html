@@ -27,10 +27,6 @@
       <a href="dashboard.html">My Resumes</a>
     </nav>
     <div class="header-actions">
-      <button class="theme-toggle" aria-label="Toggle dark mode">
-        <span class="icon-moon" data-icon="moon"></span><span class="icon-sun" data-icon="sun"></span>
-      </button>
-      <a href="dashboard.html" class="btn btn-ghost">Dashboard</a>
       <button class="btn btn-primary" data-create-resume>Create Resume</button>
     </div>
     <button class="hamburger" aria-label="Menu"><span></span></button>
@@ -220,16 +216,11 @@
   // render template showcase using the shared preview engine (kept inline: purely presentational, page-specific)
   document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('showcase-grid');
-    const sample = RTSampleData.getSampleResume();
     grid.innerHTML = RT_TEMPLATES.map(t => `
       <a class="showcase-card" href="templates.html">
-        <div class="showcase-thumb"><div class="thumb-render" style="transform:scale(.42);transform-origin:top left;width:238%;" id="show-${t.id}"></div></div>
+        <div class="showcase-thumb"><img src="${t.image}" alt="${t.name} resume template preview" loading="lazy"></div>
         <div class="showcase-meta"><span>${t.name}</span><span class="badge badge-brass">${t.category}</span></div>
       </a>`).join('');
-    RT_TEMPLATES.forEach(t => {
-      const holder = document.getElementById(`show-${t.id}`);
-      RTPreview.renderInto(holder, Object.assign({}, sample, { template: t.id }));
-    });
   });
 </script>
 </body>

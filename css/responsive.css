@@ -35,12 +35,16 @@
   .builder-body{ height:auto; }
 }
 
+/* ---- collapse the top nav before it gets cramped ---- */
+@media (max-width: 980px){
+  .main-nav{ display:none; }
+  .hamburger{ display:flex; }
+}
+
 /* ---- mobile ---- */
 @media (max-width: 720px){
   .container{ padding:0 20px; }
-  .main-nav{ display:none; }
   .header-actions .btn{ display:none; }
-  .hamburger{ display:flex; }
   .hero{ padding:44px 0 60px; }
   .hero-ctas .btn{ width:100%; }
   .hero-ctas{ flex-direction:column; }

@@ -45,9 +45,11 @@ function ensureModalOverlay() {
  * `input` (optional): { label, value, placeholder } renders a text field and
  * passes the typed value into onConfirm(value).
  */
-function openModal({ title, body = '', confirmText = 'Confirm', cancelText = 'Cancel', danger = false, onConfirm, input = null }) {
+function openModal({ title, body = '', confirmText = 'Confirm', cancelText = 'Cancel', danger = false, onConfirm, input = null, width = null }) {
   const overlay = ensureModalOverlay();
   const modal = overlay.querySelector('.modal');
+  // width is opt-in per call, so reset it every time or a wide modal would persist
+  modal.style.maxWidth = width || '';
   modal.innerHTML = `
     <h3>${title}</h3>
     ${body ? `<p>${body}</p>` : ''}

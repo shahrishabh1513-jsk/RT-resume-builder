@@ -14,7 +14,7 @@ const RTResumeData = (() => {
       resumeType: 'general', // student | internship | experienced | career-change | academic | general
       template: 'classic',
       design: {
-        accentColor: '#B9832F',
+        accentColor: '#C79A12',
         font: "'Fraunces', serif",
         fontSize: 'medium',   // small | medium | large
         spacing: 'normal',    // compact | normal | comfortable

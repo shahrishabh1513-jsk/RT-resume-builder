@@ -3,6 +3,15 @@
    Design custom properties set inline on .resume-page:
    --r-accent, --r-font, --r-scale, --r-spacing, --r-heading
    ======================================================================== */
+/* the actual A4 paper — every surface that renders a resume needs this,
+   so it lives here rather than in builder.css */
+.resume-page{
+  width:210mm; min-height:297mm; background:#fff; color:#1a1a1a;
+  padding:16mm 15mm; position:relative;
+}
+.resume-page.compact{ padding:11mm 13mm; }
+.resume-page.wide{ padding:18mm 20mm; }
+
 .resume-page{
   font-family: var(--r-font, 'IBM Plex Sans', sans-serif);
   font-size: calc(10.5pt * var(--r-scale, 1));
@@ -18,12 +27,12 @@
   font-size:1.18em; margin-bottom:8pt; letter-spacing:0;
 }
 .resume-page.h-uppercase .r-section-title{ font-family:inherit; font-size:.82em; text-transform:uppercase; letter-spacing:.09em; font-weight:700; }
-.resume-page.h-underline .r-section-title{ border-bottom:1.5px solid var(--r-accent,#B9832F); padding-bottom:5pt; }
-.resume-page.h-minimal .r-section-title{ font-weight:600; font-size:.95em; color:var(--r-accent,#B9832F); }
+.resume-page.h-underline .r-section-title{ border-bottom:1.5px solid var(--r-accent,#C79A12); padding-bottom:5pt; }
+.resume-page.h-minimal .r-section-title{ font-weight:600; font-size:.95em; color:var(--r-accent,#C79A12); }
 .resume-page.h-bold .r-section-title{ font-weight:800; }
 
 .resume-page .r-name{ font-family:'Fraunces', Georgia, serif; font-size:2.15em; font-weight:700; margin:0 0 2pt; color:#151515; }
-.resume-page .r-role{ font-size:1.08em; color:var(--r-accent,#B9832F); font-weight:600; margin-bottom:9pt; }
+.resume-page .r-role{ font-size:1.08em; color:var(--r-accent,#C79A12); font-weight:600; margin-bottom:9pt; }
 .resume-page .r-contact{ display:flex; flex-wrap:wrap; gap:2pt 14pt; font-size:.85em; color:#4b4b4b; }
 .resume-page .r-contact span{ display:flex; align-items:center; gap:4pt; }
 .resume-page .r-summary{ font-size:.95em; color:#333; }
@@ -32,14 +41,14 @@
 .resume-page .r-item:last-child{ margin-bottom:0; }
 .resume-page .r-item-head{ display:flex; justify-content:space-between; gap:10pt; align-items:baseline; }
 .resume-page .r-item-title{ font-weight:700; font-size:1em; }
-.resume-page .r-item-sub{ font-size:.92em; color:var(--r-accent,#B9832F); font-weight:600; }
+.resume-page .r-item-sub{ font-size:.92em; color:var(--r-accent,#C79A12); font-weight:600; }
 .resume-page .r-item-meta{ font-size:.82em; color:#666; white-space:nowrap; text-align:right; }
 .resume-page .r-item-desc{ font-size:.9em; color:#3a3a3a; margin-top:4pt; }
 .resume-page .r-item-desc ul{ margin:4pt 0 0 16pt; padding:0; list-style:disc; }
 .resume-page .r-item-desc li{ margin-bottom:2pt; }
 
 .resume-page .r-skill-tags{ display:flex; flex-wrap:wrap; gap:6pt; }
-.resume-page .r-skill-tags span{ background:#F1EEE6; padding:3pt 10pt; border-radius:20px; font-size:.83em; }
+.resume-page .r-skill-tags span{ background:#F3EFE3; padding:3pt 10pt; border-radius:20px; font-size:.83em; }
 .resume-page .r-skill-plain{ font-size:.9em; line-height:1.9; }
 .resume-page .r-skill-plain b{ font-weight:600; }
 
@@ -55,7 +64,7 @@
 /* ---------------- MODERN (sidebar) ---------------- */
 .resume-page.tpl-modern{ padding:0; }
 .resume-page.tpl-modern .r-grid{ display:grid; grid-template-columns:34% 66%; min-height:297mm; }
-.resume-page.tpl-modern .r-sidebar{ background:var(--r-accent,#B9832F); color:#fff; padding:20mm 14pt 16mm 16mm; }
+.resume-page.tpl-modern .r-sidebar{ background:var(--r-accent,#C79A12); color:#fff; padding:20mm 14pt 16mm 16mm; }
 .resume-page.tpl-modern .r-sidebar .r-name{ color:#fff; font-size:1.55em; }
 .resume-page.tpl-modern .r-sidebar .r-role{ color:rgba(255,255,255,.85); font-size:.95em; }
 .resume-page.tpl-modern .r-sidebar .r-contact{ flex-direction:column; gap:7pt; color:rgba(255,255,255,.92); }
@@ -63,7 +72,7 @@
 .resume-page.tpl-modern .r-sidebar .r-skill-tags span{ background:rgba(255,255,255,.18); color:#fff; }
 .resume-page.tpl-modern .r-sidebar .r-tags span{ color:rgba(255,255,255,.9); }
 .resume-page.tpl-modern .r-main{ padding:20mm 16mm 16mm 14pt; }
-.resume-page.tpl-modern .r-main .r-section-title{ color:var(--r-accent,#B9832F); }
+.resume-page.tpl-modern .r-main .r-section-title{ color:var(--r-accent,#C79A12); }
 
 /* ---------------- MINIMAL ---------------- */
 .resume-page.tpl-minimal .r-header{ margin-bottom:20pt; }
@@ -77,13 +86,13 @@
 /* ---------------- EXECUTIVE ---------------- */
 .resume-page.tpl-executive{ padding:0; }
 .resume-page.tpl-executive .r-header{
-  background:#151E2E; color:#fff; padding:18mm 20mm 14mm; margin-bottom:16pt;
+  background:#2B2B2B; color:#fff; padding:18mm 20mm 14mm; margin-bottom:16pt;
 }
 .resume-page.tpl-executive .r-name{ color:#fff; }
-.resume-page.tpl-executive .r-role{ color:var(--r-accent,#B9832F); }
+.resume-page.tpl-executive .r-role{ color:var(--r-accent,#C79A12); }
 .resume-page.tpl-executive .r-contact{ color:rgba(255,255,255,.75); }
 .resume-page.tpl-executive .r-body{ padding:0 20mm 18mm; }
-.resume-page.tpl-executive .r-section-title{ color:#151E2E; border-bottom:2px solid var(--r-accent,#B9832F); display:inline-block; padding-bottom:3pt; }
+.resume-page.tpl-executive .r-section-title{ color:#2B2B2B; border-bottom:2px solid var(--r-accent,#C79A12); display:inline-block; padding-bottom:3pt; }
 
 /* photo */
 .resume-page .r-photo{ width:26mm; height:26mm; border-radius:50%; object-fit:cover; flex-shrink:0; }

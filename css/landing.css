@@ -37,10 +37,10 @@
 .mini-resume{ padding:26px 24px; background:#fff; color:#1a1a1a; }
 .mini-resume .m-name{ font-family:var(--font-display); font-size:20px; font-weight:700; margin-bottom:2px; }
 .mini-resume .m-title{ font-size:12px; color:var(--brass-dark); font-weight:600; margin-bottom:10px; }
-.mini-resume .m-line{ height:7px; background:#ECE7DA; border-radius:3px; margin-bottom:7px; }
+.mini-resume .m-line{ height:7px; background:#EDE8DB; border-radius:3px; margin-bottom:7px; }
 .mini-resume .m-line.short{ width:60%; }
-.mini-resume .m-heading{ font-size:10px; letter-spacing:.08em; color:#B9832F; font-weight:700; margin:14px 0 8px; text-transform:uppercase; }
-.mini-resume .type-cursor{ display:inline-block; width:2px; height:12px; background:#B9832F; margin-left:2px; animation:blink 1s step-end infinite; vertical-align:middle; }
+.mini-resume .m-heading{ font-size:10px; letter-spacing:.08em; color:#C79A12; font-weight:700; margin:14px 0 8px; text-transform:uppercase; }
+.mini-resume .type-cursor{ display:inline-block; width:2px; height:12px; background:#C79A12; margin-left:2px; animation:blink 1s step-end infinite; vertical-align:middle; }
 @keyframes blink{ 50%{ opacity:0; } }
 .hero-badge-float{
   position:absolute; bottom:-18px; left:-18px; background:var(--ink); color:var(--paper);
@@ -76,7 +76,8 @@
 .showcase-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
 .showcase-card{ border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--surface); transition:transform .15s ease, box-shadow .15s ease; }
 .showcase-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow); }
-.showcase-thumb{ aspect-ratio:210/297; background:#fff; padding:14px; }
+.showcase-thumb{ aspect-ratio:210/297; background:#fff; overflow:hidden; }
+.showcase-thumb img{ width:100%; height:100%; object-fit:cover; object-position:top center; }
 .showcase-meta{ padding:14px 16px; border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:center; }
 .showcase-meta span{ font-size:13.5px; font-weight:600; }
 .showcase-more{ text-align:center; margin-top:36px; }

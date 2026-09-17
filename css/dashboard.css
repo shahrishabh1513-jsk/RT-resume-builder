@@ -37,3 +37,6 @@
 .resume-grid.list-view .resume-card-menu{ position:static; }
 
 .dash-cta-empty{ display:flex; flex-direction:column; align-items:center; }
+
+/* list view uses a much smaller thumb, so the shared .thumb-render scale is overridden */
+.resume-grid.list-view .resume-card-thumb .thumb-render{ transform:scale(.075); width:1333%; }

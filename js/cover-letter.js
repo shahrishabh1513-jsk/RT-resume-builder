@@ -24,10 +24,9 @@ const RTCoverLetter = (() => {
     letter = id ? RTStorage.loadCoverLetters()[id] : RTStorage.getActiveCoverLetter();
     if (!letter) letter = RTStorage.createCoverLetter();
 
-    bindForm();
     bindActions();
     bindZoom();
-    render();
+    render(); // renderForm() inside also wires up the field listeners
   }
 
   function save() {

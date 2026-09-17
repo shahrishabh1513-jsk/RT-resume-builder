@@ -141,7 +141,7 @@ const RTStorage = (() => {
       hiringManager: '', company: '', jobTitle: '',
       opening: '', body: '', closing: '',
       tone: 'professional',
-      design: { accentColor: '#B9832F', font: "'Fraunces', serif" }
+      design: { accentColor: '#C79A12', font: "'Fraunces', serif" }
     }, partial, { id, createdAt: now, updatedAt: now });
     all[id] = cl;
     saveCoverLetters(all);
@@ -163,18 +163,11 @@ const RTStorage = (() => {
     return (id && all[id]) || null;
   }
 
-  /* ---------------- theme & settings ---------------- */
-
-  function getTheme() {
-    return localStorage.getItem(RT_KEYS.THEME) || 'light';
-  }
-  function setTheme(theme) {
-    localStorage.setItem(RT_KEYS.THEME, theme);
-  }
+  /* ---------------- settings ---------------- */
 
   function getSettings() {
     return safeParse(localStorage.getItem(RT_KEYS.SETTINGS), {
-      defaultTemplate: 'classic', defaultFont: "'Fraunces', serif", defaultAccent: '#B9832F'
+      defaultTemplate: 'classic', defaultFont: "'Fraunces', serif", defaultAccent: '#C79A12'
     });
   }
   function saveSettings(settings) {
@@ -187,6 +180,6 @@ const RTStorage = (() => {
     createResume, updateResume, deleteResume, duplicateResume, renameResume, clearAllData,
     getActiveResumeId, setActiveResumeId, getActiveResume,
     loadCoverLetters, saveCoverLetters, createCoverLetter, updateCoverLetter, getActiveCoverLetter,
-    getTheme, setTheme, getSettings, saveSettings
+    getSettings, saveSettings
   };
 })();

@@ -5,19 +5,19 @@
  */
 const RT_TEMPLATES = [
   {
-    id: 'classic', name: 'RT Classic', category: 'professional', ats: true,
+    id: 'classic', image: 'assets/templates/classic.svg', name: 'RT Classic', category: 'professional', ats: true,
     description: 'A traditional, centered layout with a clean rule under every heading — safe for any industry.'
   },
   {
-    id: 'modern', name: 'RT Modern', category: 'modern', ats: true,
+    id: 'modern', image: 'assets/templates/modern.svg', name: 'RT Modern', category: 'modern', ats: true,
     description: 'An accent-color sidebar keeps contact info, skills and languages visible at a glance.'
   },
   {
-    id: 'minimal', name: 'RT Minimal', category: 'minimal', ats: true,
+    id: 'minimal', image: 'assets/templates/minimal.svg', name: 'RT Minimal', category: 'minimal', ats: true,
     description: 'Quiet typography and generous whitespace — content does the talking.'
   },
   {
-    id: 'executive', name: 'RT Executive', category: 'executive', ats: true,
+    id: 'executive', image: 'assets/templates/executive.svg', name: 'RT Executive', category: 'executive', ats: true,
     description: 'A bold ink header signals seniority; built for leadership and executive roles.'
   }
 ];

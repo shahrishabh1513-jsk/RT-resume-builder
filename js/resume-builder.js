@@ -656,7 +656,7 @@ const RTBuilder = (() => {
 
   function renderDesignForm() {
     const d = resume.design;
-    const colors = ['#2563EB', '#1E3A5F', '#1F6F5C', '#7C3AED', '#B0362B', '#C2661A', '#111827', '#B9832F'];
+    const colors = ['#F2C230', '#C79A12', '#8A6A0A', '#2B2B2B', '#5C5C5C', '#8C6239', '#4F7A2F', '#A83A2C'];
     const fonts = Object.keys(RTPreview.FONT_STACKS);
     const fontLabels = { "'Fraunces', serif": 'Fraunces', "Inter": 'Inter', "Arial": 'Arial', "Calibri": 'Calibri', "Georgia": 'Georgia', "Times New Roman": 'Times New Roman', "Poppins": 'Poppins', "Merriweather": 'Merriweather' };
 
@@ -666,7 +666,13 @@ const RTBuilder = (() => {
 
       <div class="design-group">
         <h4>Template</h4>
-        <div class="option-pills">${RT_TEMPLATES.map(t => `<button class="option-pill ${resume.template === t.id ? 'selected' : ''}" data-set-template="${t.id}">${t.name}</button>`).join('')}</div>
+        <div class="tpl-picker">
+          ${RT_TEMPLATES.map(t => `
+            <button class="tpl-pick ${resume.template === t.id ? 'selected' : ''}" data-set-template="${t.id}" title="${t.name}">
+              <img src="${t.image}" alt="${t.name} preview" loading="lazy">
+              <span>${t.name}</span>
+            </button>`).join('')}
+        </div>
       </div>
 
       <div class="design-group">

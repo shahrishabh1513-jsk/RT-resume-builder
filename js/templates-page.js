@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="template-card">
         <div class="template-thumb" data-preview="${t.id}">
           ${t.ats ? `<span class="badge badge-success ats-tag">${icon('check-circle')} ATS-friendly</span>` : ''}
-          <div class="thumb-render" id="tpl-thumb-${t.id}"></div>
+          <img class="template-thumb-img" src="${t.image}" alt="${t.name} resume template preview" loading="lazy">
+          <div class="template-thumb-hover"><span class="btn btn-accent btn-sm">Preview</span></div>
         </div>
         <div class="template-info">
           <div class="t-top"><h3>${t.name}</h3><span class="t-cat">${t.category}</span></div>
@@ -27,12 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `).join('');
 
-    list.forEach(t => {
-      const holder = document.getElementById(`tpl-thumb-${t.id}`);
-      const previewResume = Object.assign({}, sample, { template: t.id });
-      RTPreview.renderInto(holder, previewResume);
-    });
-
     grid.querySelectorAll('[data-preview]').forEach(el => el.addEventListener('click', () => openPreview(el.dataset.preview)));
     grid.querySelectorAll('[data-use]').forEach(btn => btn.addEventListener('click', () => useTemplate(btn.dataset.use)));
   }
@@ -40,10 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
   function openPreview(templateId) {
     const t = rtGetTemplate(templateId);
     const previewResume = Object.assign({}, sample, { template: templateId });
+    // The resume page is a fixed 210mm (~794px) wide. Scale it down inside a
+    // reserved-size box so it keeps true A4 proportions instead of being
+    // squeezed by the modal's own layout.
+    const SCALE = 0.62, PAGE_W = 794, PAGE_H = 1123;
     openModal({
       title: t.name,
-      body: `<div style="max-height:60vh;overflow:auto;border:1px solid var(--line);border-radius:8px;margin-top:10px;background:#525659;padding:20px;display:flex;justify-content:center;">
-        <div style="transform:scale(.55);transform-origin:top center;" id="modal-preview-holder"></div>
+      width: '580px',
+      body: `<div style="max-height:62vh;overflow:auto;border:1px solid var(--line);border-radius:8px;margin-top:12px;background:#57544C;padding:18px;">
+        <div style="width:${PAGE_W * SCALE}px;height:${PAGE_H * SCALE}px;margin:0 auto;position:relative;">
+          <div id="modal-preview-holder" style="position:absolute;top:0;left:0;width:${PAGE_W}px;transform:scale(${SCALE});transform-origin:top left;"></div>
+        </div>
       </div>`,
       confirmText: 'Use This Template', cancelText: 'Close',
       onConfirm: () => useTemplate(templateId)
