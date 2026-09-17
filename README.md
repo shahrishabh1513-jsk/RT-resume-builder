@@ -72,14 +72,13 @@
 ## 🔍 Live Preview
 
 <div align="center">
-
 <a href="https://shahrishabh1513-jsk.github.io/RT-resume-builder/" target="_blank">
-<img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fshahrishabh1513-jsk.github.io%2FRT-resume-builder%2F?w=1200" width="85%" style="border-radius:10px; box-shadow: 0 6px 18px rgba(0,0,0,0.2);"/>
+<img src="https://github.com/user-attachments/assets/5ce91a0f-5c21-4573-9098-14fe6b801b57" width="85%" style="border-radius:10px; box-shadow: 0 6px 18px rgba(0,0,0,0.2);"/>
 </a>
 
 <sub>👆 Click to explore the live app</sub>
 
-<br/><br/>
+<br/>
 
 <a href="https://shahrishabh1513-jsk.github.io/RT-resume-builder/" target="_blank">
   <img src="https://img.shields.io/badge/START_BUILDING-No_Sign--Up_Required-1E3A8A?style=for-the-badge&logoColor=white"/>
