@@ -18,7 +18,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1200&color=06B6D4&center=true&vCenter=true&width=760&lines=ATS-Friendly+Resumes+in+Minutes;Live+Preview+That+Updates+As+You+Type;Resume+Score+%2B+ATS+Checker+Built+In;PDF%2C+TXT+and+JSON+Export" alt="Typing SVG" />
 
-<br/>
+<br/><br/>
 
 <a href="https://shahrishabh1513-jsk.github.io/RT-resume-builder/"><img src="https://img.shields.io/badge/LIVE_DEMO-Build_Your_Resume-1E3A8A?style=for-the-badge&logo=googlechrome&logoColor=white"/></a>
 <a href="https://github.com/shahrishabh1513-jsk/RT-resume-builder"><img src="https://img.shields.io/badge/REPOSITORY-View_Code-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
